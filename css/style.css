@@ -1,0 +1,149 @@
+body{
+    font-family: 'Montserrat', Verdana;
+    background-color: #ebecf0;
+    margin: 20px 20px 0px 20px;
+    color: black;
+    line-height: 1.5;
+    background-image: url("../images/pattern-07.jpg");
+}
+
+header{
+    /* Set padding and margin */
+    padding: 10px 15px 10px 35px;
+    margin: 0px 30px 0px 30px;
+    background-color: beige;
+}
+
+nav a{
+    /* Set text decoration*/
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    /* Set color */
+    color: red;
+    text-decoration-color: red;
+    text-decoration-line: underline;
+}
+
+/* li {
+    display: inline;
+    padding: 80px 80px 80px 50px;
+  } */
+
+div{
+    display: grid;
+    place-items: center;
+}
+
+img{
+    display: inline-block;
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 20%;
+    border: solid black 50px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+main img:nth-of-type(even) {
+    border-radius: 60%
+  }
+
+div:nth-of-type(even) img{
+    border-radius: 60%;
+}
+
+h1{
+    font-family: Roboto, Anton;
+    font-size: 50px;
+    text-align: center;
+}
+
+main{
+    margin: 0;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+footer{
+    text-align: center;
+    border: solid 10px black;
+} 
+
+a.skip{
+    background: greenyellow;
+    position: absolute;
+    left: -1000px;
+  }
+
+a.skip:focus{
+    left: 0px;
+}
+
+nav a:focus{
+    border-top: yellow solid 10px;
+}
+
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+}
+
+nav .active{
+    font-size: 200%;
+}
+
+/* The animation code */
+@keyframes fd_animation {
+    from {background-color: #d3d3d3;}
+    to {background-color: aqua;}
+  }
+
+
+.grid_fd{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    width: 100%;
+    animation-name: fd_animation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+.grid_fd:hover{
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .grid_fd {
+        animation: none;
+    }
+  }
+
+.term{
+    border-bottom: 10px black solid;
+}
+
+form {
+    background-color: gold;
+    width: 235px;
+    height: 44px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
