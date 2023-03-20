@@ -27,11 +27,6 @@ a:hover{
     text-decoration-line: underline;
 }
 
-/* li {
-    display: inline;
-    padding: 80px 80px 80px 50px;
-  } */
-
 div{
     display: grid;
     place-items: center;
@@ -146,4 +141,86 @@ form {
     height: 100%;
     width: 100%;
     padding: 6px 10px;
+  }
+
+  #homephoto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+  #homeintroblurb{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  #homecontentblurb{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    font-size: 150%;
+  }
+
+  #homeendblurb{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  h2{
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  h3{
+    font-size: 150%;
+    font-weight: bold;
+  }
+
+  .grid_lit{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+    width: 100%;
+    }
+
+    .term_lit{
+    border-bottom: 20px pink solid;
+    }   
+
+  @media only screen and (min-width : 768px) {
+    nav ul li{
+        display: inline;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    nav .active{
+        font-size: 300%;
+    }
+
+    nav a{
+        /* Set text decoration*/
+        color: red;
+        text-decoration: wavy;
+    }
+
+    .grid_lit{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        width: 100%;
+    }
+
+    .term_lit{
+        border-bottom: 10px rebeccapurple dashed;
+    }
+
+    .term_hist{
+        border-bottom: 10px blue solid;
+    }
+
   }
